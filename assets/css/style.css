@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 .header-title {
-  margin: 30px;
+  text-align: center;
   font-size: 35px;
   font-weight: 500;
   
@@ -992,7 +992,7 @@ h2 {
   .container-content3 {
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
+    background-image: linear-gradient(to right, #0869AF, #80C9FF);
   }
   .sublayout-content {
     display: flex;
@@ -1001,7 +1001,7 @@ h2 {
 
   .side-content{ 
     padding: 50px;
-    height: 955px;
+    height: 985px;
     overflow: auto;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
@@ -1096,6 +1096,10 @@ h2 {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
+  background-color: #2C84C3;
+  padding: 10px;
+  max-width: 750px;
+  max-height: 95px;
 }
 
 .content-item-cmt .img-box {
@@ -1144,6 +1148,8 @@ h2 {
   .side-content {
     display: none;
   }
+  .box {
+    max-width: 370px;
   }
 
   .demo {
@@ -1153,4 +1159,74 @@ h2 {
   .active,
 .demo:hover {
   opacity: 1;
+}
+}
+
+/* CÔNG CỤ */
+.tools {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  background-color: #EBF7FF;
+  cursor: pointer;
+}
+
+.tools-icon {
+  background-color: #FFF;
+  border-radius: 50%;
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.tools-icon:hover {
+  box-shadow: 5px 10px 8px -2px #7e94b6;
+}
+
+.icon-img {
+  max-width: 96px;
+  max-height: 96px;
+}
+
+.tools-content {
+  font-size: 30px;
+  font-weight: 500;
+  color: #253F4C;
+  text-align: center;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .tools {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tools-item {
+    flex: 0 0 auto;
+    margin-right: 25px;
+  }
+
+  .tools-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-img{
+    max-width: 55px;
+    max-height: 55px;
+  }
+
+  .tools-content {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
