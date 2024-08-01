@@ -8,9 +8,12 @@
 
   <!-- JS -->
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./assets/js/showform.js"></script>
   <!-- Boxicons CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
@@ -21,7 +24,7 @@
     crossorigin="anonymous"></script>
 
 
-   
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,19 +81,19 @@
             <div id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-language"></i>
                   </a>
                   <ul class="dropdown-menu" style="left: -96px;" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
                     <li><a class="dropdown-item" href="#">Tiếng Anh</a></li>
-  
+
                   </ul>
                 </li>
-  
+
               </ul>
-  
+
             </div>
           </div>
         </div>
@@ -111,11 +114,11 @@
 
         </div>
         <div class="btn-user">
-          <div class="btn-login">ĐĂNG NHẬP</div>
-          <div class="btn-login">ĐĂNG KÝ</div>
+          <div class="btn-login" onclick="showPopup()">ĐĂNG NHẬP</div>
+          <div class="btn-login"  onclick="showRegister()">ĐĂNG KÝ</div>
         </div>
 
-      </div>
+      </div>  
 
       </a>
       <div id="submenu-1" class="submenu-container">
@@ -202,6 +205,86 @@
         </div>
       </div>
     </nav>
+    <!-- POPUP FORM LOGIN -->
+    <div id="popupForm" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <form class="popup-form">
+          <div class="header-form">
+            Đăng nhập
+          </div>
+          <div class="flex-column">
+           
+          </div>
+          <div class="inputForm">
+            
+             
+          
+            <input type="text" class="input" placeholder="Số điện thoại hoặc mã số thuế" required>
+          </div>
+
+          <div class="flex-column">
+          
+          </div>
+          <div class="inputForm">
+           
+            <input type="password" class="input" placeholder="Nhập mật khẩu" required>
+
+          </div>
+
+          <div class="flex-row">
+            <div class="checked">
+              <input type="checkbox" style="margin-right: 10px;">
+              <label>Ghi nhớ đăng nhập </label>
+            </div>
+            <span class="span">Quên mật khẩu?</span>
+          </div>
+          <button class="button-submit">Đăng nhập</button>
+
+          <p class="p">Chưa có tài khoản?<span style="cursor: pointer; font-size: 20px; font-weight: 500; margin-left: 5px;" class="login-link" onclick="showRegister()">Đăng ký</span></p>
+          <p class=" line">Hoặc Đăng nhập với</p>
+
+          <div class="btn-social">
+            <button class="btn-google">
+              <img src="./assets/icon/google_icon.png" alt="" srcset="">
+            </button>
+            <button class="btn-apple">
+              <img src="./assets/icon/Apple_icon.png" alt="" srcset="">
+
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+      <!-- POPUP FORM REGISTER -->
+      <div id="popupFormRegister" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hideRegister()">&times;</span>
+            <form class="popup-form">
+                <div class="header-form">Đăng ký</div>
+                <div class="inputForm">
+                    <input type="text" class="input" placeholder="Số điện thoại hoặc mã số thuế" required>
+                </div>
+                <div class="inputForm"style="margin-top: 10px;">
+                    <input type="password" class="input" placeholder="Nhập mật khẩu" required>
+                </div>
+                <div class="inputForm" style="margin-top: 10px;">
+                  <input type="password" class="input" placeholder="Nhập lại mật khẩu" required>
+              </div>
+                <button class="button-submit">Đăng ký</button>
+                <p class="p">Đã có tài khoản? <span  style="cursor: pointer; font-size: 20px; font-weight: 500; margin-left: 5px;" class="login-link" onclick="showPopup()">Đăng nhập</span></p>
+                <p class="line">Hoặc Đăng nhập với</p>
+                <div class="btn-social">
+                    <button class="btn-google">
+                        <img src="./assets/icon/google_icon.png" alt="">
+                    </button>
+                    <button class="btn-apple">
+                        <img src="./assets/icon/Apple_icon.png" alt="">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script>
       $(document).ready(function () {
         $('.submenu-container').hide();
@@ -246,11 +329,11 @@
       });
 
     </script>
-
+   
     <div class="body">
       <div class="row">
         <div class="container-header">
-          <img width="1900px" height="550px" src="./assets/img/landing.png" alt="hinh-anh-doi-tac">
+          <img class="ladding" width="1900px" height="550px" src="./assets/img/landing.png" alt="hinh-anh-doi-tac">
         </div>
       </div>
       <div class="row" style="margin: 20px 0px;">
@@ -263,7 +346,8 @@
           </a>
           <a href="#" class="tools-item">
             <div class="tools-icon">
-              <img class="icon-img" style="margin-left: 12px;" width="70px" height="70px" src="./assets/icon/hopdong.png" alt="Hợp đồng">
+              <img class="icon-img" style="margin-left: 12px;" width="70px" height="70px"
+                src="./assets/icon/hopdong.png" alt="Hợp đồng">
             </div>
             <div class="tools-content">Hợp đồng</div>
           </a>
@@ -290,8 +374,8 @@
       <div class="row">
         <div class="container-second">
           <div class="col-sm-5">
-            <img style="margin: 40px; border-radius: 8px; max-width: 83%;" class="img-fluid" src="./assets/img/MTAC_02_1.png"
-              alt="hinh-anh-doi-tac">
+            <img style="margin: 40px; border-radius: 8px; max-width: 83%;" class="img-fluid"
+              src="./assets/img/MTAC_02_1.png" alt="hinh-anh-doi-tac">
           </div>
           <div class="col-sm-7">
             <div class="title-2">Bắt đầu trải nghiệm của bạn trên nền tảng ứng dụng di động</div>
@@ -316,7 +400,10 @@
               <div class="content">
                 <div class="title">NỘI DUNG 1</div>
                 <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                  placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi
+                  ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus
+                  unde. Ut, exercitationem eum aperiam illo illum laudantium?
                 </div>
                 <div class="buttons">
                   <button>SEE MORE</button>
@@ -328,7 +415,10 @@
               <div class="content">
                 <div class="title">NỘI DUNG 2</div>
                 <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                  placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi
+                  ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus
+                  unde. Ut, exercitationem eum aperiam illo illum laudantium?
                 </div>
                 <div class="buttons">
                   <button>SEE MORE</button>
@@ -340,7 +430,10 @@
               <div class="content">
                 <div class="title">NỘI DUNG 3</div>
                 <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                  placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi
+                  ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus
+                  unde. Ut, exercitationem eum aperiam illo illum laudantium?
                 </div>
                 <div class="buttons">
                   <button>SEE MORE</button>
@@ -352,7 +445,10 @@
               <div class="content">
                 <div class="title">NỘI DUNG 4</div>
                 <div class="des">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima
+                  placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi
+                  ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus
+                  unde. Ut, exercitationem eum aperiam illo illum laudantium?
                 </div>
                 <div class="buttons">
                   <button>SEE MORE</button>
@@ -371,33 +467,34 @@
             <div class="item">
               <img src="https://via.placeholder.com/150x150">
               <div class="content">
-               
+
               </div>
             </div>
             <div class="item">
               <img src="https://via.placeholder.com/150x150">
               <div class="content">
-               
+
               </div>
             </div>
             <div class="item">
               <img src="https://via.placeholder.com/150x150">
               <div class="content">
-                
+
               </div>
             </div>
           </div>
           <!-- next prev -->
           <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
+            <button id="prev">
+              < </button>
+                <button id="next">></button>
           </div>
           <!-- time running -->
           <div class="time"></div>
         </div>
       </div>
       <div class="row" style="margin-top: 30px;">
-        <div class="blog-title">TIN TỨC NỔI BẬT </div>
+        <div class="header-title">TIN TỨC NỔI BẬT </div>
       </div>
       <div class="row">
 
@@ -693,9 +790,9 @@
         <section class="client_section layout_padding">
           <div class="container">
             <div class="heading_container">
-              <h2>
+              <div class="header-title">
                 NHẬN XÉT TỪ MỌI NGƯỜI
-              </h2>
+              </div>
             </div>
             <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -708,9 +805,9 @@
                         </div>
                         <div class="detail-box">
                           <div class="name">
-                            <h6>
+                            <div class="header-title">
                               GUESS ID
-                            </h6>
+                            </div>
                           </div>
                           <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repudiandae praesentium error
@@ -761,7 +858,9 @@
                             </h6>
                           </div>
                           <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, amet totam. Itaque placeat eos eveniet praesentium? Nulla quis facilis numquam animi deserunt adipisci distinctio, earum veniam non, ipsam vero assumenda!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, amet totam. Itaque
+                            placeat eos eveniet praesentium? Nulla quis facilis numquam animi deserunt adipisci
+                            distinctio, earum veniam non, ipsam vero assumenda!
                           </p>
                           <i class="fa fa-quote-left" aria-hidden="true"></i>
                         </div>
