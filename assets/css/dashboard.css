@@ -345,7 +345,7 @@
 
   .content-01 {
     border-right: 2px solid #ccc;
-    margin: 25px 100px ;
+    margin: 25px 50px ;
   }
   
   .content-02 {
@@ -361,6 +361,7 @@
     text-decoration: none ;
     color: var(--primary-color);
     font-weight: 500;
+    margin: 10px 0;
   }
 
   .header-content--02 {
