@@ -1,6 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
   :root{
     --primary-color: #086db5;
+    --cal-text: 24px;
   }
 
   *{
@@ -285,6 +286,31 @@
     font-weight: 600;
   }
 
+ 
+.sidebar .nav-links > li.active {
+  border-left: 4px solid var(--primary-color); 
+  background: #f0f0f0; 
+  transition: border-left 0.4s ease, background 0.4s ease;
+}
+
+
+.sidebar .nav-links li .sub-menu a.active {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+
+.sidebar .nav-links li .sub-menu a {
+  font-weight: normal;
+  color: #333;
+}
+
+.header-content--02 svg {
+  height: 30px;
+  width: 30px;
+  fill: var(--primary-color);
+}
+
 
   @media screen and (max-width: 400px){
     .sidebar{
@@ -311,3 +337,113 @@
       width: calc(100% - 78px);
     }
   }
+
+  .header-page {
+    font-size: var(--cal-text);
+    font-weight: 500;
+  }
+
+  .content-01 {
+    border-right: 2px solid #ccc;
+    margin: 25px 100px ;
+  }
+  
+  .content-02 {
+    margin: 25px 50px ;
+  }
+  
+  .row-content {
+    display: flex;
+    align-items: center;
+    
+  }
+  .header-lable--link {
+    text-decoration: none ;
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+
+  .header-content--02 {
+    display: flex;
+    align-items: center;
+    margin:20px 0px;
+  }
+
+  .header-02 {
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  .header-lable {
+    min-width: 150px;
+    height: 50px;
+    color: var(--primary-color);
+    font-weight: 500;
+  } 
+  
+  .text-content {
+    min-width: 300px;
+    height: 50px;
+    float: left;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .lable-status {
+    font-size: 12px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .status-color{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  .lable-status--success {
+    padding: 5px;
+    background-color: rgba(236, 253, 243, 1);
+    border-radius: 20px;
+    margin-top: -2px;
+}
+
+.success {
+    background-color: green;
+  }
+
+.text-success {
+    color: green;
+}
+
+.lable-status--warning {
+    padding: 5px;
+    background-color: rgba(235, 227, 32, 0.21);
+    border-radius: 20px;
+    margin-top: -2px;
+}
+
+.warning {
+    background-color: rgba(255, 214, 0, 1);
+  }
+
+.text-warning {
+    color:  rgba(255, 214, 0, 1);
+}
+
+.lable-status--expires {
+  padding: 5px;
+  background-color: #EB202736;
+  border-radius: 20px;
+  margin-top: -2px;
+}
+
+.expires {
+  background-color: #EB2027;
+}
+
+.text-expires {
+  color:  #EB2027;
+}
