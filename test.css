@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    height: 100vh;
+    background: #f53207;
+    color: #340707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width: 350px;
+    height: 550px;
+    box-shadow: 0 0 20px 20px #16010142;
+    border-radius: 50px;
+}
+
+
+.inner-card{
+    height: 100%;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+
+
+.card-front, .card-back{
+    position: absolute;
+    height: 100%;
+    padding: 50px;
+    background-color: #931c02;
+    box-sizing: border-box;
+    backface-visibility:hidden;
+    border-radius: 50px;
+}
+
+
+.card-back{
+    transform: rotateY(180deg);
+
+}
+
+
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #5e0b0b;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+
+::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+
+
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 25px 0 10px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2px;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.submit-btn{
+    position: relative;
+}
+
+
+.submit-btn::after{
+    content: '\27a4';
+    color: #333;
+    line-height: 32px;
+    font-size: 12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+
+
+}
+
+
+span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.card .btn{
+    margin-top: 10px;
+}
+
+
+.card a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+
+
+}
