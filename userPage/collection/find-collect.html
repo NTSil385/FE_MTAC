@@ -7,7 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="../../../assets/img/logo-nhan-dien MTAC - 20.05.2022.png" />
 
     <link rel="stylesheet" href="../../../assets/css/dashboard.css">
-    <link rel="stylesheet" href="../../../assets/css/attac-doc.css">
+    <link rel="stylesheet" href="../../assets/css/debt.css">
     
 
     <!-- Boxiocns CDN Link -->
@@ -49,8 +49,7 @@
         </a>
 
     </nav>
-    <div class="sidebar ">
-
+    <div class="sidebar">
         <ul class="nav-links">
             <li>
                 <a href="../dasboard.html">
@@ -72,8 +71,8 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Hợp đồng</a></li>
-                    <li><a href="./contract-stv.html">Còn hiệu lực</a></li>
-                    <li><a href="./contract-expires.html">Đã hết hạn</a></li>
+                    <li><a href="../contract/contract-stv.html">Đã thanh toán</a></li>
+                    <li><a href="../contract/contract-expires.html">Đã hết hạn</a></li>
                     <li><a href="#"></a></li>
                 </ul>
             </li>
@@ -88,12 +87,11 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">Thanh toán</a></li>
-                    <li><a href="../payment/paid.html">Đã thanh toán</a></li>
-                    <li><a href="../payment/unpaid.html">Chưa thanh toán</a></li>
+                    <li><a href="./paid.html">Đã thanh toán</a></li>
+                    <li><a href="./unpaid.html">Chưa thanh toán</a></li>
                     <li><a href="#"></a></li>
                 </ul>
             </li>
-
             <li style=" padding: 10px 0">
                 <a href="#">
                     <img style="margin: 0 25px;" height="30px" width="30px" src="../../../assets/icon/thugom_side.png" alt=""
@@ -101,10 +99,9 @@
                     <span class="link_name">Thu gom</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="../collection/collect.html">Thu gom</a></li>
+                    <li><a class="link_name" href="#">Thu gom</a></li>
                 </ul>
             </li>
-
             <li>
             <li class="profile-details">
                 <div class="iocn-link">
@@ -163,45 +160,171 @@
     <section class="home-section">
         <div class="home-content">
             <!-- <i class='bx bx-menu'></i> -->
-            <div class="header-page">Danh sách file đính kèm</div>
+            <div class="header-page">TRA CỨU THU GOM</div>
+            
         </div>
-        <div class="row" style="padding: 20px;">
+        <div class="des">Tùy chọn điều kiện lọc</div>
+        <div class="row" style="padding:0px 20px; ">
          
-            <div class="table-responsive-sm"> 
-                <table class="table table-bordered" id="myTable">
-                    <tr class="header">
-                        <th scope="col">STT</th>
-                        <th>Loại biên bản</th>
-                        <th>Tên</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>Biên bản giao nhận</td>
-                        <td>09.12.23_BBGNCTNH_MOI_TRUONG_A_CHAU_HUE.pdf</td>
-                        <td>
-                           <div class="btn-infomation">
-                            Chi tiết
-                           </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td scope="row">2</td>
-                        <td>Chứng từ chất thải nguy hại</td>
-                        <td>4882_CTCTNH_MOI_TRUONG_A_CHAU_HUE_09.12.23.pdf</td>
-                        <td>
-                            <div class="btn-infomation">
-                                Chi tiết
+            <div class="btn-search">
+                
+                <div class="wrapper">
+                    <div class="title" >
+                        Hợp đồng số
+                    </div>
+                    <select class="custom-select">
+                        
+                    <option class="select-item" value="0">Chọn số hợp đồng:   </option>
+                          <option class="select-item" value="1">Option 1</option>
+                          <option class="select-item" value="2">Option 2</option>
+                        <option class="select-item" value="3">Option 3</option>
+                          <option class="select-item" value="4">Option 4</option>
+                      </select>
+              </div>
+                <div class="select">
+                    <div class="title" >
+                        Cơ sở/Chi nhánh
+                    </div>
+                  <div
+                    class="selected"
+                    data-default=" Chọn cơ sở/Chi nhánh"
+                    data-one="option-1"
+                    data-two="option-2"
+                    data-three="option-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 512 512"
+                      class="arrow"
+                    >
+                      <path
+                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="options">
+                    <div title="all">
+                      <input id="all" name="option" type="radio" checked="" />
+                      <label class="option" for="all" data-txt="All"></label>
+                    </div>
+                    <div title="option-1">
+                      <input id="option-1" name="option" type="radio" />
+                      <label class="option" for="option-1" data-txt="option-1"></label>
+                    </div>
+                    <div title="option-2">
+                      <input id="option-2" name="option" type="radio" />
+                      <label class="option" for="option-2" data-txt="option-2"></label>
+                    </div>
+                    <div title="option-3">
+                      <input id="option-3" name="option" type="radio" />
+                      <label class="option" for="option-3" data-txt="option-3"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="reservation-box">
+                    <div class="top">
+                      <div class="static">
+                        <div class="title" >Thời gian thanh toán từ ngày</div>
+                        <div class="input-container" id="date-picker-container">
+                            
+                          <input type="date" id="date-checkin" class="date-field" name"date-from">
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <div class="selected-box">
+                            <div class="title" >Đến ngày</div>
+                            <div class="input-container" id="date-picker-container">
+                             
+                              <input type="date" id="date-checkout" class="date-field" name"">
                             </div>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                        <div class="button-container">
+                          <span class="button ok">Tra cứu</span>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+                  
+                  
             </div>
             
            
         </div>
+        <hr>
+        <div class="des" style="margin: 0 !important;">Kết quả tra cứu</div>
+        <hr>
+        <div class="row"></div>
+           <div class="table-responsive-sm"> 
+            <table class="table table-bordered" id="myTable">
+                <tr class="header">
+                    <th>Số hợp đồng</th>
+                    <th>Biển số xe</th>
+                    <th>Thời gian thu gom</th>
+                    <th>Khối lượng thu gom</th>
+                    <th>Địa chỉ</th>
+                   
+
+                </tr>
+                <tr>
+                    
+                    <td>602_2024.HDNH.MTAC</td>
+                    <td>51C-62711</td>
+                    <td>15:00:00</td>
+                    <td>2kg</td>
+                    <td>
+                        Số 62 đường Ngô Thời Nghiệm Phường An Bình Thành phố Rạch Giá Tỉnh Kiên Giang
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>602_2024.HDNH.MTAC</td>
+                    <td>51C-62711</td>
+                    <td>15:00:00</td>
+                    <td>2kg</td>
+                    <td>
+                        Số 62 đường Ngô Thời Nghiệm Phường An Bình Thành phố Rạch Giá Tỉnh Kiên Giang
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>602_2024.HDNH.MTAC</td>
+                    <td>51C-62711</td>
+                    <td>15:00:00</td>
+                    <td>2kg</td>
+                    <td>
+                        Số 62 đường Ngô Thời Nghiệm Phường An Bình Thành phố Rạch Giá Tỉnh Kiên Giang
+                    </td>
+                </tr>
+            </table>
+        </div>
+           
+        </div>
     </section>
-   
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
     <script src="../../../assets/js/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
