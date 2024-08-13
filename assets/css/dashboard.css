@@ -451,3 +451,53 @@
 .text-expires {
   color:  #EB2027;
 }
+
+.lable-status--doc {
+  padding: 5px;
+  background-color:#B3DFFF;
+  border-radius: 20px;
+  margin-top: -2px;
+}
+
+.doc {
+  background-color: #086DB5;
+}
+
+.text-doc {
+  color:  #086DB5;
+}
+
+.lable-status--contract {
+  padding: 5px;
+  background-color:#FCE9D4;
+  border-radius: 20px;
+  margin-top: -2px;
+}
+
+.contract {
+  background-color: #BA4B14;
+}
+
+.text-contract {
+  color:  #BA4B14;
+}
+
+
+.lable-status--deft {
+  padding: 5px;
+  background-color:#D4CCFF;
+  border-radius: 20px;
+  margin-top: -2px;
+}
+
+.deft {
+  background-color: #62598F;
+}
+
+.text-deft {
+  color:  #62598F;
+}
+
+
+
+
