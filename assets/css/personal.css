@@ -1,0 +1,123 @@
+a {
+    text-decoration: none !important;
+}
+.header-combo {
+    display: flex;
+    align-items: center;
+    padding:0  0  30px 0px ;
+}
+
+.personal-info {
+    margin: 0 20px;
+}
+
+.header-nav--menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-menu--item {
+    padding: 20px;
+    font-weight: 500;
+}
+
+.filter-combo {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+
+.side-content {
+    padding: 15px 15px 15px 0px;
+    height: 985px;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+  
+  .side-content::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+  
+  .content-item {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+
+    padding: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  .content-item .img-box {
+    flex: 0 0 100px;
+    margin-right: 10px;
+  }
+  
+  .content-item .img-box img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 8px;
+  }
+  
+  .content-item .detail-content {
+    flex: 1;
+  }
+  
+  .content-item .detail-content h5 {
+    margin: 0 0 5px 0;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+  }
+  .content-item .detail-content p {
+
+    color: #000;
+  }
+  
+  
+  .content-item .detail-content p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+  }
+  
+  .blog_section .heading_container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .btn-rate {
+    display: flex ;
+  }
+  
+  .datetime-cmt {
+    height: 70%;
+  }
+
+  .date-time {
+    color:  #ccc;
+  }
+
+
+  .des-cmt {
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+  }

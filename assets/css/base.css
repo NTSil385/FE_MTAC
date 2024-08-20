@@ -603,3 +603,18 @@ img {
   font-weight: 400;
   color: #000;
 }
+
+.suggestions {
+  display: none;
+  position: absolute;
+  left: 105%;
+  top: 0;
+  background-color: #fff;
+  width: 200px;
+  padding: 10px;
+  z-index: 10;
+  color: var(--primary-color);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

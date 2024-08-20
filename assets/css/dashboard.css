@@ -393,11 +393,20 @@
     color: #000;
   }
 
+
   .lable-status {
     font-size: 12px;
     margin-top: 10px;
     display: flex;
     align-items: center;
+  }
+
+  .status-name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
   }
 
   .status-color{

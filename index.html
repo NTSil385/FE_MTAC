@@ -99,112 +99,150 @@
         </div>
       </div>
     </nav>
-    <!-- MAIN NAV -->
-    <nav style="position: relative; z-index: 1;">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <div class="menu">
-        <div class="nav-content ">
-          <div class="menu-item">TRANG CHỦ</div>
-          <div class="menu-item" data-target="#submenu-1">DỰ ÁN</div>
-          <div class="menu-item" data-target="#submenu-2">GIẢI PHÁP</div>
-          <div class="menu-item" data-target="#submenu-3">TIN TỨC</div>
-
-        </div>
-        <div class="btn-user">
-          <div class="btn-login" onclick="showPopup()">ĐĂNG NHẬP</div>
-          <div class="btn-login" onclick="showRegister()">ĐĂNG KÝ</div>
-        </div>
-
-      </div>
-
-      </a>
-      <div id="submenu-1" class="submenu-container">
-        <div class="submenu-left">
-          <div class="submenu-item" data-target="#submenu2-1-1">
-            Địa điểm
-            <div class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
+        <!-- MAIN NAV -->
+        <nav style="position: relative; z-index: 15;">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <div class="menu">
+            <div class="nav-content ">
+              <a href="index.html" class="menu-item">TRANG CHỦ</a>
+              <a href="project.html" class="menu-item" data-target="#submenu-1">DỰ ÁN</a>
+              <a href="blog.html" class="menu-item" data-target="#submenu-3">TIN TỨC</a>
+              <a href="quotation.html" class="menu-item" data-target="#submenu-4">BÁO GIÁ</a>
+              <a href="libary.html" class="menu-item" data-target="#submenu-5">THƯ VIỆN</a>
+    
+    
+            </div>
+            <div class="btn-user">
+              <div class="btn-login" onclick="showPopup()">ĐĂNG NHẬP</div>
+              <div class="btn-login" onclick="showRegister()">ĐĂNG KÝ</div>
+            </div>
+    
+          </div>
+    
+          </a>
+          <div id="submenu-1" class="submenu-container">
+            <div class="submenu-left">
+              <div class="submenu-item" data-target="#submenu2-1-1">
+                Địa điểm
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <a href="project-gallery.html" class="submenu-item" data-target="#submenu2-1-2">Thu hồi pin thải
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </a>
+            </div>
+            <div class="submenu-right">
+              <div id="submenu2-1-1" class="submenu2">
+                <div class="submenu-item">Thừa Thiên Huế</div>
+                <div class="submenu-item">Đồng Nai</div>
+                <div class="submenu-item">Tiền Giang</div>
+                <div class="submenu-item">Long An</div>
+                <div class="submenu-item">Bình Dương</div>
+                <div class="submenu-item">Hồ Chí Minh</div>
+              </div>
+              <div id="submenu2-1-2" class="submenu2">
+                <div class="submenu-item">1.2.1</div>
+                <div class="submenu-item">1.2.2</div>
+                <div class="submenu-item">1.2.3</div>
+              </div>
             </div>
           </div>
-          <div class="submenu-item" data-target="#submenu2-1-2">Thu hồi pin thải
-            <div class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
+          <div id="submenu-2" class="submenu-container">
+            <div class="submenu-left">
+              <div class="submenu-item" data-target="#submenu2-2-1">
+                2.1
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="submenu-item" data-target="#submenu2-2-2">2.2
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="submenu-right">
+              <div id="submenu2-2-1" class="submenu2">
+                <div class="submenu-item">2.1.1</div>
+                <div class="submenu-item">2.1.2</div>
+                <div class="submenu-item">2.1.3</div>
+              </div>
+              <div id="submenu2-2-2" class="submenu2">
+                <div class="submenu-item">2.2.1</div>
+                <div class="submenu-item">2.2.2</div>
+                <div class="submenu-item">2.2.3</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="submenu-right">
-          <div id="submenu2-1-1" class="submenu2">
-            <div class="submenu-item">Thừa Thiên Huế</div>
-            <div class="submenu-item">Đồng Nai</div>
-            <div class="submenu-item">Tiền Giang</div>
-            <div class="submenu-item">Long An</div>
-            <div class="submenu-item">Bình Dương</div>
-            <div class="submenu-item">Hồ Chí Minh</div>
-          </div>
-          <div id="submenu2-1-2" class="submenu2">
-            <div class="submenu-item">1.2.1</div>
-            <div class="submenu-item">1.2.2</div>
-            <div class="submenu-item">1.2.3</div>
-          </div>
-        </div>
-      </div>
-      <div id="submenu-2" class="submenu-container">
-        <div class="submenu-left">
-          <div class="submenu-item" data-target="#submenu2-2-1">
-            2.1
-            <div class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
+          <div id="submenu-3" class="submenu-container">
+            <div class="submenu-left">
+              <div class="submenu-item" data-target="#submenu3-2-1">3.1
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="submenu-item" data-target="#submenu3-2-2">3.2
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="submenu-right">
+              <div id="submenu3-2-1" class="submenu2">
+                <div class="submenu-item">3.1.1</div>
+                <div class="submenu-item">3.1.2</div>
+                <div class="submenu-item">3.1.3</div>
+              </div>
+              <div id="submenu3-2-2" class="submenu2">
+                <div class="submenu-item">3.2.1</div>
+                <div class="submenu-item">3.2.2</div>
+                <div class="submenu-item">3.2.3</div>
+              </div>
             </div>
           </div>
-          <div class="submenu-item" data-target="#submenu2-2-2">2.2
-            <div class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
+          <div id="submenu-4" class="submenu-container">
+            <div class="submenu-left">
+              <div class="submenu-item" data-target="#submenu4-2-1">Xử lý chất thải
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="submenu-item" data-target="#submenu4-2-2">Hồ sơ môi trường
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="submenu-item" data-target="#submenu4-2-2">Nhóm cồng kềnh
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="submenu-right">
+              <div id="submenu4-2-1" class="submenu2">
+                <div class="submenu-item" onclick="openFormXLCHT600()">Xử lý chất thải nguy hại nhỏ bằng 600KG/Năm</div>
+                <div class="submenu-item" onclick="openFormXLCHT_600()">Xử lý chất thải nguy hại lớn bằng 600KG/Năm</div>
+                <div class="submenu-item" onclick="openFormCTTMM2000()">Xử lý Chất thải ngành may mặc nhỏ hơn 2000KG</div>
+                <div class="submenu-item" onclick="openFormCTTMM_2000()">Xử lý Chất thải ngành may mặc lớn hơn 2000KG</div>
+              </div>
+              <div id="submenu4-2-2" class="submenu2">
+                <div class="submenu-item" onclick="openFormGPMT()">Giấy phép môi trường</div>
+                <div class="submenu-item" onclick="openFormDGTD()">Đánh giá tác động môi trường</div>
+                <div class="submenu-item" onclick="openFormBCCTBVMT2022()">Báo cáo công tác bảo vệ môi trường 2022</div>
+              </div>
+              <div id="submenu4-2-3" class="submenu2">
+                <div class="submenu-item" onclick="openFormCTCK2000()">Xử lý chất thải Cồng Kềnh nhỏ hơn 2000KG</div>
+                <div class="submenu-item" onclick="openFormCTCK_2000()">Xử lý chất thải Cồng Kềnh lớn hơn 2000KG</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="submenu-right">
-          <div id="submenu2-2-1" class="submenu2">
-            <div class="submenu-item">2.1.1</div>
-            <div class="submenu-item">2.1.2</div>
-            <div class="submenu-item">2.1.3</div>
-          </div>
-          <div id="submenu2-2-2" class="submenu2">
-            <div class="submenu-item">2.2.1</div>
-            <div class="submenu-item">2.2.2</div>
-            <div class="submenu-item">2.2.3</div>
-          </div>
-        </div>
-      </div>
-      <div id="submenu-3" class="submenu-container">
-        <div class="submenu-left">
-          <div class="submenu-item" data-target="#submenu3-2-1">3.1
-            <div class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-          <div class="submenu-item" data-target="#submenu3-2-2">3.2
-            <div class="icon">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-          </div>
-        </div>
-        <div class="submenu-right">
-          <div id="submenu3-2-1" class="submenu2">
-            <div class="submenu-item">3.1.1</div>
-            <div class="submenu-item">3.1.2</div>
-            <div class="submenu-item">3.1.3</div>
-          </div>
-          <div id="submenu3-2-2" class="submenu2">
-            <div class="submenu-item">3.2.1</div>
-            <div class="submenu-item">3.2.2</div>
-            <div class="submenu-item">3.2.3</div>
-          </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
     <!-- POPUP FORM LOGIN -->
     <div id="popupForm" class="popup">
       <div class="popup-content">
@@ -290,47 +328,61 @@
       </div>
     </div>
     <script>
-      $(document).ready(function () {
-        $('.submenu-container').hide();
+      function showSuggestions(input) {
+      const suggestionsBox = input.nextElementSibling;
+      suggestionsBox.style.display = 'block';
+    }
+    
+    function hideSuggestions(input) {
+      const suggestionsBox = input.nextElementSibling;
+      setTimeout(() => {
+        suggestionsBox.style.display = 'none';
+      }, 200); 
+    }
+    
+    </script> 
+    <script>
+    $(document).ready(function () {
+      $('.submenu-container').hide();
 
-        $('.menu-item').mouseenter(function () {
-          var target = $(this).data('target');
-          $(target).stop(true, true).fadeIn(200); // Hiển thị submenu-container của menu-item này
-        });
-
-        $('.menu-item').mouseleave(function () {
-          var target = $(this).data('target');
-          setTimeout(function () {
-            if (!$(target).is(':hover')) {
-              $(target).stop(true, true).fadeOut(200); // Ẩn submenu-container nếu không hover vào target
-            }
-          }, 200);
-        });
-
-        $('.submenu-container').mouseleave(function () {
-          $(this).stop(true, true).slideDown(200); // Ẩn submenu-container khi rời chuột ra khỏi nó
-          $(this).hide();
-        });
-
-        $('.submenu-left .submenu-item').mouseenter(function () {
-          var target = $(this).data('target');
-          $('.submenu2').not(target).stop(true, true).fadeOut(200); // Ẩn tất cả các submenu2 khác
-          $(target).stop(true, true).fadeIn(200); // Hiển thị submenu2 của menu-item này
-        });
-
-        $('.submenu-left .submenu-item').mouseleave(function () {
-          var target = $(this).data('target');
-          setTimeout(function () {
-            if (!$(target).is(':hover')) {
-              $(target).stop(true, true).fadeOut(200); // Ẩn submenu2 nếu không hover vào target
-            }
-          }, 200);
-        });
-
-        $('.submenu2').mouseleave(function () {
-          $(this).stop(true, true).fadeOut(200); // Ẩn submenu2 khi rời chuột ra khỏi nó
-        });
+      $('.menu-item').mouseenter(function () {
+        var target = $(this).data('target');
+        $(target).stop(true, true).fadeIn(200); // Hiển thị submenu-container của menu-item này
       });
+
+      $('.menu-item').mouseleave(function () {
+        var target = $(this).data('target');
+        setTimeout(function () {
+          if (!$(target).is(':hover')) {
+            $(target).stop(true, true).fadeOut(200); // Ẩn submenu-container nếu không hover vào target
+          }
+        }, 200);
+      });
+
+      $('.submenu-container').mouseleave(function () {
+        $(this).stop(true, true).slideDown(200); // Ẩn submenu-container khi rời chuột ra khỏi nó
+        $(this).hide();
+      });
+
+      $('.submenu-left .submenu-item').mouseenter(function () {
+        var target = $(this).data('target');
+        $('.submenu2').not(target).stop(true, true).fadeOut(200); // Ẩn tất cả các submenu2 khác
+        $(target).stop(true, true).fadeIn(200); // Hiển thị submenu2 của menu-item này
+      });
+
+      $('.submenu-left .submenu-item').mouseleave(function () {
+        var target = $(this).data('target');
+        setTimeout(function () {
+          if (!$(target).is(':hover')) {
+            $(target).stop(true, true).fadeOut(200); // Ẩn submenu2 nếu không hover vào target
+          }
+        }, 200);
+      });
+
+      $('.submenu2').mouseleave(function () {
+        $(this).stop(true, true).fadeOut(200); // Ẩn submenu2 khi rời chuột ra khỏi nó
+      });
+    });
 
     </script>
 
@@ -1042,7 +1094,7 @@
     ScrollReveal().reveal('.content-2');
     ScrollReveal().reveal('.carousel-id');
     ScrollReveal().reveal('.blog-title', { delay: 500, origin: 'left ' });
-    ScrollReveal().reveal('.container-content3');
+    ScrollReveal().reveal('.container-content4');
     ScrollReveal().reveal('.heading_container', { delay: 500, origin: 'left ' });
     ScrollReveal().reveal('.header-title', { delay: 500, origin: 'left ' });
     ScrollReveal().reveal('.show');
