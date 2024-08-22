@@ -24,7 +24,7 @@ span {
     line-height: 2.5rem;
     font-size: 12px;
     font-size: 0.8rem;
-    text-transform: uppercase;
+   
 }
 input[type="submit"] {
     background: var(--primary-color);
