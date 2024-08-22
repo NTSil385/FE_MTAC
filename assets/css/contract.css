@@ -73,29 +73,3 @@
     background-color: #f1f1f1;
   }
   
-  .filter-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    width: 100% !important;
-    padding-top: 10px;
-    padding-left: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
-  }
-  .btn-filter{
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 20px;
-  }
-
-  .filter-header svg {
-    width: 20px;
-    height: 20px;
-    font-weight: 500;
-  }
-
