@@ -2,6 +2,34 @@
     --primary-color: #086db5;
 }
 
+    .content-01 {
+        border-right: 2px solid #ccc;
+        margin: 20px 10px !important;
+    }
+
+    .content-02 {
+        margin: 20px 10px !important;
+    }
+
+.header {
+    min-width: 100px;
+    height: 50px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.text {
+    min-width: 150px;
+    height: 50px;
+    float: left;
+    font-weight: 400;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
 
 .btn-evaluete {
     width: 300px !important;
@@ -53,10 +81,6 @@
         align-items: flex-start;
     }
 
-    .header-content--02 {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
     .header-content--02 svg {
         margin-bottom: 10px;
