@@ -318,13 +318,12 @@
 
   .content-01 {
     border-right: 2px solid #ccc;
-    margin: 25px 50px ;
-  }
-  
-  .content-02 {
-    margin: 25px 50px ;
-  }
-  
+    margin: 20px 10px !important;
+}
+
+.content-02 {
+    margin: 20px 10px !important;
+}
   .row-content {
     display: flex;
     align-items: center;
@@ -352,20 +351,24 @@
   }
   
   .header-lable {
-    min-width: 150px;
+    min-width: 100px;
     height: 50px;
     color: var(--primary-color);
     font-weight: 500;
-  } 
-  
-  .text-content {
-    min-width: 300px;
+}
+
+.text-content {
+    min-width: 150px;
     height: 50px;
     float: left;
     font-weight: 400;
     color: #000;
-  }
-
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
 
   .lable-status {
     font-size: 12px;
