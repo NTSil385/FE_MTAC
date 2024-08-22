@@ -79,18 +79,6 @@
     background-color: #f1f1f1;
   }
   
-  .filter-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    width: 99.4% !important;
-    margin: 0 12px;
-    padding-top: 10px ;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
-  }
 
   .btn-filter{
     width: 60px;
