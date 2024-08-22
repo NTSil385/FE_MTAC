@@ -311,33 +311,6 @@
   fill: var(--primary-color);
 }
 
-
-  @media screen and (max-width: 400px){
-    .sidebar{
-      width: 240px;
-    }
-    .sidebar.close{
-      width: 78px;
-    }
-    .sidebar .profile-details{
-      width: 240px;
-    }
-    .sidebar.close .profile-details{
-      background: none;
-    }
-    .sidebar.close .profile-details{
-      width: 78px;
-    }
-    .home-section{
-      left: 240px;
-      width: calc(100% - 240px);
-    }
-    .sidebar.close ~ .home-section{
-      left: 78px;
-      width: calc(100% - 78px);
-    }
-  }
-
   .header-page {
     font-size: var(--cal-text);
     font-weight: 500;
@@ -507,6 +480,57 @@
   color:  #62598F;
 }
 
+#myTable {
+  border-collapse: collapse; 
+  width: 100%;
+  font-size: 18px; 
+}
 
+#myTable th, #myTable td {
+  text-align: left; 
+  padding: 12px;
+ 
+}
+#myTable th:nth-child(1), #myTable td:nth-child(1) {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+#myTable th:nth-child(2), #myTable td:nth-child(2) {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width: 400px){
+  .sidebar{
+    width: 240px;
+  }
+  .sidebar.close{
+    width: 78px;
+  }
+  .sidebar .profile-details{
+    width: 240px;
+  }
+  .sidebar.close .profile-details{
+    background: none;
+  }
+  .sidebar.close .profile-details{
+    width: 78px;
+  }
+  .home-section{
+    left: 240px;
+    width: calc(100% - 240px);
+  }
+  .sidebar.close ~ .home-section{
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+}
 
 

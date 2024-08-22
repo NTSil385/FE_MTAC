@@ -1,40 +1,50 @@
-const chartData = {
-    labels: ["Hoàn thành","Quá hạn",  "Đang xử lý"],
-    data: [30, 60, 10],
-  };
-  
-  const myChart = document.querySelector(".my-chart");
-  const ul = document.querySelector(".programming-stats .details ul");
-  
-  new Chart(myChart, {
-    type: "doughnut",
-    data: {
-      labels: chartData.labels,
-      datasets: [
-        {
-          label: "Tỷ lệ",
-          data: chartData.data,
-        },
-      ],
+window.onload = function () {
+
+  var chart_01 = new CanvasJS.Chart("char-donut", {
+    animationEnabled: true,
+    title:{
+      text: "Contract",
+      horizontalAlign: "left" 
     },
-    options: {
-      borderWidth: 10,
-      borderRadius: 2,
-      hoverBorderWidth: 0,
-      plugins: {
-        legend: {
-          display: false,
-        },
-      },
-    },
+    data: [{
+      type: "doughnut",
+      startAngle: 60,
+      //innerRadius: 60,
+      indexLabelFontSize: 17,
+      indexLabel: "{label} - #percent%",
+      toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+      dataPoints: [
+        { y: 63, label: "Hoàn thành" },
+        { y: 28, label: "Quá hạn" },
+        { y: 10, label: "Đang xử lý" },
+      ]
+    }]
   });
+  chart_01.render();
+
   
-  const populateUl = () => {
-    chartData.labels.forEach((l, i) => {
-      let li = document.createElement("li");
-      li.innerHTML = `${l}: <span class='percentage'>${chartData.data[i]}%</span>`;
-      ul.appendChild(li);
-    });
-  };
+  var chart_02 = new CanvasJS.Chart("chart-bar", {
+    animationEnabled: true,
+    theme: "light2", // "light1", "light2", "dark1", "dark2"
+    title:{
+      text: "Total amount spent"
+    },
+    axisY: {
+      title: "Reserves(MMbbl)"
+    },
+    data: [{        
+      type: "column",  
+      showInLegend: true, 
+      dataPoints: [      
+        { y: 300878, label: "Quý 1" },
+        { y: 266455,  label: "Quý 2" },
+        { y: 169709,  label: "Quý 3" },
+        { y: 158400,  label: "Quý 4" },
+
+      ]
+    }]
+  });
+  chart_02.render();
   
-  populateUl();
+
+}

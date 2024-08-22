@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Công Ty Môi Trường Á Châu | UserPage </title>
   <link rel="shortcut icon" type="image/png" href="../assets/img/logo-nhan-dien MTAC - 20.05.2022.png" />
 
@@ -22,7 +23,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
     integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </head>
 
 <body>
   <!-- MAIN NAV -->
@@ -151,169 +154,37 @@
   </div>
   <section class="home-section">
     <div class="home-content">
-      <!-- <i class='bx bx-menu' ></i> -->
+      <i class='bx bx-menu' ></i>
 
     </div>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-4 col-lg-4">
         <div class="programming-stats">
           <div class="header-chart">
-            <div class="chart-heading">Hợp đồng
-
-            </div>
+            <div class="chart-heading">Hợp đồng</div>
             <div class="dropdown">
               <button onclick="myFunction()" class="dropbtn">Tuần này
-                <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                  <path
-                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9z"/>
                 </svg>
               </button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-              </div>
             </div>
           </div>
-          <div class="lable-chart">
-            <div class="label-item">
-              <div style="background-color: #ff6384;" class="label-color"></div>
-              <div class="label-name">Quá hạn</div>
-            </div>
-            <div class="label-item">
-              <div style="background-color: #36a2eb;" class="label-color"></div>
-              <div class="label-name">Hoàn thành</div>
-            </div>
-            <div class="label-item">
-              <div style="background-color: #ff9f40;" class="label-color"></div>
-              <div class="label-name">Đang xử lý</div>
-            </div>
-
-          </div>
-          <div class="chart-container">
-            <canvas class="my-chart"></canvas>
-          </div>
-          <script>
-
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-
-            window.onclick = function (event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-          </script>
-
-
+          <div id="char-donut" style="height: 300px; width: 100%;"></div>
+           <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
         </div>
       </div>
-      <div class="col-md-4">
-        <div style="margin: 0px 0 10px 25px;" class="row">
-          <div class="programming-stats reponsive-dis" style="max-height: 200px;">
-            <div class="header-chart">
-              <div class="chart-heading">
-                <img style="margin: 0 10px;" height="30px" width="30px" src="../assets/icon/thanhtoan_side.png" alt=""
-                  srcset="">
-                Thanh toán
-              </div>
-              <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Tuần này
-                  <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                      d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                  </svg>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#home">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#contact">Contact</a>
-                </div>
-              </div>
-            </div>
-            <div class="lable-data">
-              <div class="label-count">
-                <div class="label-header">Tất cả hóa đơn</div>
-                <div class="label-number">45</div>
-              </div>
-              <div class="label-count">
-                <div class="label-header">Đã thanh toán </div>
-                <div class="label-number">32</div>
-              </div>
-
-            </div>
-            <div class="chart-container">
-              <canvas class="my-chart"></canvas>
-            </div>
-
-
-
-          </div>
-        </div>
-        <div style="margin: 15px 0 10px 25px;" class="row">
-          <div class="programming-stats reponsive-dis" style="max-height: 200px;">
-            <div class="header-chart">
-              <div class="chart-heading">
-                <img style="margin: 0 10px;" height="30px" width="30px" src="../assets/icon/thugom_side.png" alt=""
-                  srcset="">
-                Chuyến thu gom
-              </div>
-              <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Tuần này
-                  <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                      d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                  </svg>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#home">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#contact">Contact</a>
-                </div>
-              </div>
-            </div>
-            <div class="lable-data">
-              <div class="label-count">
-                <div class="label-header">Tổng số chuyến</div>
-                <div class="label-number">20</div>
-              </div>
-              <div class="label-count">
-                <div class="label-header">Đã xuất phát </div>
-                <div class="label-number">10</div>
-              </div>
-
-            </div>
-            <div class="chart-container">
-              <canvas class="my-chart"></canvas>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="programming-stats" style="padding-bottom: 20px;">
+     
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <div class="programming-stats">
           <div class="header-chart">
             <div class="chart-heading">
               Hợp đồng sắp đến hạn
             </div>
 
           </div>
-          <div class="lable-chart">
-            <table class="table table-hover">
+          <div class="table-responsive-sm lable-chart">
+            <table class="table table-hover"  id="myTable" >
               <thead>
                 <tr>
 
@@ -344,9 +215,7 @@
             </table>
 
           </div>
-          <div class="chart-container">
-            <canvas class="my-chart"></canvas>
-          </div>
+        
           <script>
 
             function myFunction() {
@@ -371,13 +240,8 @@
 
         </div>
       </div>
-    </div>
-    <div class="row" style="height: 600px;">
-      <div class="col-md-8">
-        <div id="columnchart_material" style="padding: 50px;width: 800px; height: 500px;"></div>
-      </div>
-      <div class="col-md-4" style="margin-top: 20px;">
-        <div class="programming-stats reponsive-dis" style="padding-bottom: 20px;">
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <div class="programming-stats" style="padding-bottom: 20px;">
           <div class="header-chart">
             <div class="chart-heading">
               Yêu cầu hỗ trợ
@@ -385,7 +249,7 @@
 
           </div>
           <div class="lable-chart">
-            <table class="table table-hover">
+            <table class="table table-hover" id="myTable">
               <thead>
                 <tr>
 
@@ -422,8 +286,98 @@
             </table>
 
           </div>
-          <div class="chart-container">
-            <canvas class="my-chart"></canvas>
+        
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="row" style="height: 700px; margin-top: 20px;">
+      <div class="col-md-8 col-sm-8 col-lg-8">
+        <div class="programming-stats">
+          <div class="header-chart">
+            <div class="chart-heading">Tổng tiền đã chi</div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Tuần này
+                <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="chart-bar" style="height: 300px; width: 100%;"></div>
+          
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <div class="programming-stats--second">
+          <div class="header-chart">
+            <div class="chart-heading">
+              <img style="margin: 0 10px;" height="30px" width="30px" src="../assets/icon/thanhtoan_side.png" alt=""
+                srcset="">
+              Thanh toán
+            </div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Tuần này
+                <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="lable-data">
+            <div class="label-count">
+              <div class="label-header">Tất cả hóa đơn</div>
+              <div class="label-number">45</div>
+            </div>
+            <div class="label-count">
+              <div class="label-header">Đã thanh toán </div>
+              <div class="label-number">32</div>
+            </div>
+
+          </div>
+         
+        </div>
+        <div class="programming-stats--second" style="margin-top: 20px;">
+          <div class="header-chart">
+            <div class="chart-heading">
+              <img style="margin: 0 10px;" height="30px" width="30px" src="../assets/icon/thugom_side.png" alt=""
+                srcset="">
+              Chuyến thu gom
+            </div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Tuần này
+                <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="lable-data">
+            <div class="label-count">
+              <div class="label-header">Tổng số chuyến</div>
+              <div class="label-number">20</div>
+            </div>
+            <div class="label-count">
+              <div class="label-header">Đã xuất phát </div>
+              <div class="label-number">10</div>
+            </div>
+
           </div>
 
 
@@ -431,13 +385,13 @@
         </div>
       </div>
     </div>
+    <div class="row"></div>
   </section>
 
   <script src="../assets/js/sidebar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="../assets/chart-js/chart01.js"></script>
-  <script src="../assets/chart-js/chart02.js"></script>
 </body>
 
 </html>
