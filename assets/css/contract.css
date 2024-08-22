@@ -15,6 +15,7 @@
     width: 100%;
     border: 1px solid #ddd; 
     font-size: 18px; 
+    table-layout: fixed;
   }
   
   #myTable th, #myTable td {
@@ -23,31 +24,48 @@
    
   }
   #myTable th:nth-child(1), #myTable td:nth-child(1) {
-    width: 150px;
+    width: 20%;
     max-width: 250px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
   #myTable th:nth-child(2), #myTable td:nth-child(2) {
-    width: 150px;
+    width: 20%;
     max-width: 250px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+#myTable th:nth-child(3), #myTable td:nth-child(3) {
+  width: 10%;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 #myTable th:nth-child(4), #myTable td:nth-child(4) {
-    width: 150px;
-    max-width: 250px;
+    max-width: 15%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+#myTable th:nth-child(5), #myTable td:nth-child(5) {
+  width: 10%;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 
 #myTable th:nth-child(6), #myTable td:nth-child(6) {
-    width: 150px;
+    width: 10%;
     max-width: 250px;
     white-space: nowrap;
     overflow: hidden;
@@ -55,7 +73,7 @@
 }
 
 #myTable th:nth-child(7), #myTable td:nth-child(7) {
-    width: 150px;
+    width: 15%;
     max-width: 250px;
     white-space: nowrap;
     overflow: hidden;

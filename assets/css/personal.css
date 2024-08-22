@@ -14,16 +14,24 @@ a {
 }
 
 .header-nav--menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .nav-menu--item {
-    padding: 20px;
-    font-weight: 500;
+  padding: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #333; 
+  border-bottom: 2px solid transparent; 
+  transition: all 0.3s ease;
 }
 
+.nav-menu--item.active {
+  border-bottom: 2px solid #006db5; 
+  color: #006db5;
+}
 .filter-combo {
     display: flex;
     align-items: center;
